@@ -123,27 +123,27 @@ node.size.vec <- sqrt(total.influence.output/max(total.influence.output))*(8*exp
 graph.influence <- qgraph(influences.SAMPLE.MEAN.FLAT,
        vsize = node.size.vec,
        edge.labels=F,
-       gray=T,
+       theme="colorblind",
        title=paste("Linguistic Influence Network of", dataset.date))
 
 qgraph(get.network.FLAT.mat.from.quantile(influences.SAMPLE.df, 0.25), 
        vsize=node.size.vec, 
        edge.labels=F, 
-       gray=T, 
+       theme="colorblind", 
        layout=graph.influence$layout, 
        title=paste("Linguistic Influence Network of", dataset.date, "0.25 quantile"))
 
 qgraph(get.network.FLAT.mat.from.quantile(influences.SAMPLE.df, 0.5), 
        vsize=node.size.vec, 
        edge.labels=F, 
-       gray=T, 
+       theme="colorblind", 
        layout=graph.influence$layout, 
        title=paste("Linguistic Influence Network of", dataset.date, "0.50 quantile"))
 
 qgraph(get.network.FLAT.mat.from.quantile(influences.SAMPLE.df, 0.75), 
        vsize=node.size.vec, 
        edge.labels=F, 
-       gray=T, 
+       theme="colorblind", 
        layout=graph.influence$layout, 
        title=paste("Linguistic Influence Network of", dataset.date, "0.75 quantile"))
 

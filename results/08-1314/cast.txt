@@ -1,0 +1,11 @@
+agent.num	agent.name
+1	"GARRE"
+2	"BUCHA"
+3	"ROBE"
+4	"SOTO"
+5	"GINS"
+6	"SCAL"
+7	"JAY"
+8	"BREY"
+9	"KENN"
+10	"ALIT"
